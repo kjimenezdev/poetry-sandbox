@@ -8,7 +8,6 @@ PATH_ROOT = os.path.dirname(__file__)
 
 def download_file(
         file_url: str,
-        filename: str,
         path: str,
 ) -> str:
     """Downloads a file
@@ -32,12 +31,8 @@ def main():
     """Main method"""
     csv_url = "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv"
     file_name = csv_url.split('/')[-1:][0]
-    file_path = os.path.join(PATH_ROOT ,'instance', file_name)
-    print(csv_url)
-    print(file_name)
-    print(file_path)
-    download_file(csv_url, file_name, file_path)
+    file_path = os.path.join(PATH_ROOT, 'instance', file_name)
+    download_file(csv_url, file_path)
 
 if __name__ == "__main__":
     main()
-

@@ -96,11 +96,29 @@ Plug 'maralla/vim-toml-enhance'
 
 ` poetry add requests`
 
+*Options*
+
+```
+--D|dev: Add package as development dependency.
+--optional : Add as an optional dependency.
+--dry-run : Outputs the operations but will not execute anything.
+--version: Specifies the version os the package
+
+```
+
 ### remove <package>
 
-* Removes required packages to {}.toml file and installs them
+* Removes required packages from {}.toml file and installs them
 
 ` poetry remove requests`
+
+*Options*
+
+```
+--D|dev: Removes a package from the development dependencies.
+--dry-run : Outputs the operations but will not execute anything .
+
+```
 
 ### show
 
