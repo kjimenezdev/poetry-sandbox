@@ -188,6 +188,32 @@ Plug 'maralla/vim-toml-enhance'
 
 * Locks (without installing) the dependencies specified in pyproject.toml.
 
+
+## Git dependencies
+* To depend on a library located in a git repository
+
+```[tool.poetry.dependencies]
+requests = { git = "https://github.com/requests/requests.git" }
+```
+
+## Scripts
+* Scripts or executable that will be installed when installing the package
+```
+[tool.poetry.scripts]
+poetry = 'poetry.console:run'
+```
+
+## Extras
+* Poetry supports extras to allow expression of:
+
+optional dependencies, which enhance a package, but are not required; and
+clusters of optional dependencies.
+
+```
+poetry install --extras "mysql pgsql"
+poetry install -E mysql -E pgsql
+```
+
 ## Aditional references
 
 [Github repo] (https://github.com/sdispater/poetry)
