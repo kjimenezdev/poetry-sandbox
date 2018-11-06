@@ -1,8 +1,7 @@
 
 # Poetry sandbox
->  Basic poetry usage
 
-This repository is intended to be used to dig into poetry
+>  This repository is intended to be used to dig into poetry's basic usage
 
 The main goal is to be able to setup project depenencies using poetry.
 
@@ -27,18 +26,12 @@ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.p
 poetry completions bash > /etc/bash_completion.d/poetry.bash-completion
 
 # Bash (macOS/Homebrew)
-poetry completions bash > $(brew --prefix)/etc/bash_completion.d/poetry.bash-completion
-
-# Fish
-poetry completions fish > ~/.config/fish/completions/poetry.fish
-
-# Zsh
+poetry completions bash > $(brew --prefix)/etc/bash_completion.d/poetry.bash-completion # Fish poetry completions fish > ~/.config/fish/completions/poetry.fish # Zsh
 poetry completions zsh > ~/.zfunc/_poetry
 
 ```
 
-
-### TOML Syntax
+### .toml Syntax
 
 Add the following lines to your .vimrc
 
@@ -62,7 +55,7 @@ Plug 'maralla/vim-toml-enhance'
 
 * Adds poetry files to the proyect
 
-* Options *
+*Options*
 --name: Name of the pacage.
 --description: Description of the package.
 --author: Author of the package.
@@ -75,7 +68,7 @@ Plug 'maralla/vim-toml-enhance'
 
 ` poetry install `
 
-* Options *
+*Options*
 
 ` poetry install --no-dev `
 ` poetry install --extras "mysql pgsql" `
@@ -113,7 +106,7 @@ Plug 'maralla/vim-toml-enhance'
 
 * Lists all the available packages
 
-* Options *
+*Options*
 
 ```
 --no-dev: Do not list the dev dependencies.
@@ -130,7 +123,7 @@ Plug 'maralla/vim-toml-enhance'
 
 ### publish
 
-* Options *
+*Options*
 
 ```
 -r|--repository: The repository to register the package to (default: pypi). Should match a repository name set by the config command.
@@ -144,7 +137,7 @@ Plug 'maralla/vim-toml-enhance'
 
 `poetry config --list`
 
-* Options *
+*Options*
 ```
 --unset: Remove the configuration element named by setting-key.
 --list: Show the list of current config variables.
@@ -154,7 +147,7 @@ Plug 'maralla/vim-toml-enhance'
 
 `poetry search requests`
 
-* Options *
+*Options*
 
 `-N|--only-name: Search only in name.`
 
@@ -164,4 +157,5 @@ Plug 'maralla/vim-toml-enhance'
 
 ## Aditional references
 
-[Official Website] (https://poetry.eustace.io/)
+[Github repo] (https://github.com/sdispater/poetry)
+[Website] (https://poetry.eustace.io/)
