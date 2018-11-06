@@ -19,6 +19,21 @@ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.p
 
 ```
 
+or
+
+```
+pip install --user poetry
+```
+
+add poetry to path
+
+```
+POETRY_BINS="$HOME/.poetry/bin"
+if [ -d "$POETRY_BINS" ]; then
+  path_ladd "$POETRY_BINS"
+fi
+```
+
 ### Poetry autocompletion
 
 ```sh
